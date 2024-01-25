@@ -1,0 +1,72 @@
+.ContentBlock {
+    background-color: $black;
+    color: $white;
+    padding-block: 100px;
+
+    .content-wrapper {
+        display: flex;
+        margin-bottom: 40px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 35px;
+            margin-bottom: 0px;
+        }
+
+        h2 {
+            max-width: 480px;
+        }
+
+        .content {
+            flex: 1;
+
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .image {
+                display: none;
+                height: 270px;
+
+                @media (max-width: 768px) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        .image-wrapper {
+            width: 100%;
+            height: 430px;
+            position: relative;
+
+            .image {
+                width: 60%;
+                height: 100%;
+                background-color: $primary-color;
+            }
+
+            &:nth-child(2) {
+                margin-top: -150px;
+
+                .image {
+                    margin-left: auto;
+                    background-color: $primary-color-dark;
+                }
+            }
+        }
+
+    }
+
+}

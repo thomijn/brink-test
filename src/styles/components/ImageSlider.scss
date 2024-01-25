@@ -1,0 +1,13 @@
+.ImageSlider {
+    margin-top: 40px;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    .image {
+        height: 385px;
+        width: 100%;
+    }
+
+}

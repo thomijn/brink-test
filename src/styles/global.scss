@@ -1,0 +1,110 @@
+/*
+   CSS Reset
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    font-weight: 500;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*
+   End CSS Reset
+*/
+
+body {
+    background: $bg-gradient;
+    color: $black;
+    font-family: 'SuisseIntl', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-size: 84px;
+    line-height: 110%;
+    letter-spacing: -1.68px;
+
+    @media (max-width: 768px) {
+        font-size: 36px;
+        letter-spacing: -0.72px;
+    }
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 110%;
+
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
+}
+
+p {
+    font-size: 21px;
+    line-height: 160%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+        padding: 0 10px;
+    }
+}
+
+.section {
+    margin-bottom: 100px;
+}
+
+.image {
+    background-color: $primary-color;
+}
+
+.divider {
+    border-bottom: 1px solid $white;
+}

@@ -1,0 +1,26 @@
+.Hero {
+    p {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        max-width: 1100px;
+    }
+
+    .images-wrapper {
+        display: flex;
+        gap: 40px;
+        margin-top: 20px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .image {
+        width: 100%;
+        aspect-ratio: 0.9;
+        background-color: $primary-color;
+        max-height: 800px;
+    }
+}
